@@ -1,4 +1,3 @@
 #!/bin/bash
 
-
-sudo python3 $(dirname $0)/login.py 2>/dev/null
+python3 $(dirname $0)/login.py 2>/dev/null
