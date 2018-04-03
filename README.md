@@ -8,3 +8,13 @@ Python package needed
 System package needed
 
 - PhantomJS
+
+Edit `login.py` and add your own credentials before running the bash script `autologin` to log in.
+
+```bash
+# change username and password in the python script
+vim login.py
+# make the autologin bash script runnable and run it
+chmod +x autologin
+./autologin
+```
