@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from selenium import webdriver
+import sys
 import os
 
 # use your own credentials
@@ -39,7 +40,7 @@ except Exception as e:
     # some failure
     if is_pswd_found:
         print('login failure. please check your credentials')
-        print(e.__str__())
+        print(e.__str__(), file=sys.stderr)
     else:
         print('already logged in.')
 
