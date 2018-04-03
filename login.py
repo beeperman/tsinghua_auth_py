@@ -38,6 +38,7 @@ try:
 except Exception as e:
     # some failure
     if is_pswd_found:
+        print('login failure. please check your credentials')
         print(e.__str__())
     else:
         print('already logged in.')
