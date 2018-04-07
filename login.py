@@ -7,7 +7,7 @@ import os
 # off-campus network access
 off_camp = True
 
-# re-login time (in hour)
+# re-login time (in hour) 0: don't re-login
 re_login_time = 0
 
 # use your own credentials
@@ -91,7 +91,7 @@ def headless_login():
 
 # re-run login if login time exceed time limit
 if headless_login():
-    time.sleep(2)
+    time.sleep(10)
     headless_login()
 
 browser.close()
