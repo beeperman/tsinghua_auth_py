@@ -11,7 +11,8 @@ usernm = 'username'
 passwd = 'password'
 url = 'http://auth4.tsinghua.edu.cn'
 
-# or import from credentials.py
+# or import from credentials.py (will override the settings above)
+# create credentials.py and assign values to setting variables above (e.g. usernm, passwd) in it
 try:
     from credentials import *
     print('loading settings from credentials.py')
