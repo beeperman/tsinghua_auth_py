@@ -1,3 +1,5 @@
 .idea
+credentials.py
 venv
 *.log
+*.pyc
